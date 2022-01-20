@@ -14,6 +14,7 @@ const NewCommentForm = (props) => {
 
   useEffect(() => {
     if (status === 'completed' && !error) {
+      onAddedComment();
     }
   }, [status, error, onAddedComment]);
 
